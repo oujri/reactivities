@@ -74,7 +74,6 @@ namespace API
                     };
                 });
 
-            services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IJwtGenerator, JwtGenerator>();
             services.AddScoped<IUserAccessor, UserAccessor>();
         }
